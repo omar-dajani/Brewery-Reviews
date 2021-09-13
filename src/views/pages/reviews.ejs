@@ -1,0 +1,30 @@
+<%- include('../partials/header'); -%>
+    <%- include('../partials/menu'); -%>
+        <body>
+            <div class="container mt-4">
+                <div class="search">
+                  <form method="get" action="/reviews" class="form-inline my-2 my-lg-0">
+                        <input type="text" name="searchTerm" placeholder="Search" class="searchTerm">
+                  </form>
+                 </div>
+                 <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Brewery</th>
+                        <th scope="col">Review</th>
+                        <th scope="col">Review Date</th>
+                      </tr>
+                      <%if (items) { 
+                        var reviews = '';
+                        items.forEach(function(item) {
+                          reviews += '<tr><td scope="col">' + item.tv_show + '</td><td scope="col">' + item.review + '</td><td scope="col">' + item.review_date + '</td></tr>';
+                        });
+                    }%>
+                    <%- reviews %>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                  </table>
+            </div>
+        </body>
+<%- include('../partials/footer'); -%>
