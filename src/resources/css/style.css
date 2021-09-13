@@ -1,0 +1,178 @@
+/* Fonts */
+@font-face {
+    font-family: SF-Mono;
+    src: url("../misc/sf-mono/SF-Mono-Light.otf");
+ }
+
+body {
+    font-family: SF-Mono;
+    background-color: #0a192f;
+}
+
+/* Navigation Bar */
+.navbar {
+    margin-top: 17px;
+}
+
+.navbar ul {
+    margin-right: 10px;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.number-nav {
+    color: #64ffdb;
+}
+
+.nav-item-text {
+    font-size: 13px;
+    color: #cdd6f6;
+}
+
+.navbar-nav > li > a:hover > .nav-item-text{
+    color: #64ffdb;
+    transition: 0.3s;
+}
+
+.search-form {
+    margin-right: 20px;
+}
+
+.search-form input::placeholder {
+    font-size: 13px;
+    background-color: #0a192f;
+}
+
+.search-form input[type=text] {
+    font-size: 13px;
+    color: #64ffdb;
+}
+
+.buscar-caja a {
+    text-decoration: none;
+}
+.buscar-caja:hover > .buscar-txt {
+    width: 240px;
+    padding: 0 6px;
+}
+   
+.buscar-caja:hover > a i{
+    color: #64ffdb;
+    transition: 1s;
+}
+   
+.buscar-btn {
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    color: white;
+    cursor: pointer;
+}
+   
+i {
+    color: white;
+    font-size: 15px;
+}
+   
+.buscar-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+    font-weight: bold;
+}
+/* Navigation Bar */
+
+/* Review Card */
+.card {
+    margin-bottom: 20px;
+    background: #081426;
+    color: white;
+    border-radius: 15px; 
+}
+
+#card-title {
+    margin: 0; 
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+#micro-title{
+    margin: 0; 
+    padding: 0;
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+
+#address-title{
+    margin: 0; 
+    padding: 0;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.my-btn {
+    font-size: 14px;
+    border-color: #64ffdb;
+    background-color: rgba(100,255,218,0) !important;
+    color: white;
+}
+
+.my-btn:hover {
+    background-color: rgba(100,255,218,0.1) !important;
+    border-color: #64ffdb !important;
+}
+
+.my-btn {
+    border-color: #64ffdb;
+}
+
+.modal-content {
+    color: white;
+    background: #0a192f;
+}
+/* Review Card */
+
+/* Footer */
+footer {
+    color: #cdd6f6;;
+    background: none;
+    font-size: 12px;
+}
+/* Footer */
+
+/* Reviews */
+.searchTerm {
+    width: 100%;
+    border: 3px solid #0a192f;
+    border-right: none;
+    padding: 5px;
+    height: 36px;
+    outline: none;
+    color: black;
+
+    margin-bottom: 20px;
+}
+
+td {
+    color: white;
+}
+
+th {
+    color: #64ffdb
+}
+/* Reviews */
